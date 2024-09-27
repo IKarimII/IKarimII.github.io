@@ -1,0 +1,254 @@
+a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+body {
+    user-select: none;
+}
+
+.logo {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: inline;
+    margin-left: 2%;
+    margin-bottom: 0.1%;
+
+}
+
+.logo:hover {    
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+
+.name {
+    display: inline;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+  
+}
+
+.nav-bar {
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+    overflow: hidden;
+    padding: 0.3rem 0;
+}
+
+header .navigation {
+    float: right;
+    margin-right: 20px;
+}
+
+.navigation:hover {
+    color: rgb(249, 170, 170);
+    border-bottom: 1.5px solid black;
+}
+.aboutxt {
+    margin-top: 0.05%;
+}
+.About h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+.About p {
+    text-align: center;
+    margin: 0px 5%;
+}
+
+#Karim {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    height: 400x;
+    margin: 100px 0px;
+}
+
+.carousel h1 {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    border-bottom: 1px solid black;
+}
+
+.carousel-item {
+    height: 400px; 
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; 
+    object-fit: contain;
+  }
+
+  /* Make carousel control arrows black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Make carousel indicators black */
+.carousel-indicators .active {
+    background-color: rgb(0, 0, 0);
+}
+
+.carousel-indicators li {
+    background-color: rgb(0, 0, 0);
+}
+
+.email, .number {
+    display: inline;
+    text-align: right;
+}
+
+#certifications {
+    margin: 3% 5%;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
+
+.number {
+    float: right;
+}
+
+footer a {
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.platforms {
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+}
+
+footer h3{
+    margin-left: 1.7%;
+}
+
+.contact {
+    padding-bottom: 0.8%;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    margin-top: 4%;
+    font-size: smaller;
+}
+
+.copyright {
+    float: right;
+    font-size: xx-small;
+    margin: 0;
+    padding-top: 0.4%;
+}
+
+.number{
+    margin: 0 2%;
+}
+
+.certificates img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.certificates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.certificates::after {
+    content: "";
+    width: 350px;
+}
+  
+.certifications p {
+    margin-left: 5%;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.carousel h1.hidden, .certifications h1.hidden, .certificates img.hidden {
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.carousel h1.show, .certifications h1.show , .certificates img.show{
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.About :nth-child(1) {
+    transition-delay: 200ms;
+}
+.About :nth-child(2) {
+    transition-delay: 1200ms;
+}
+.About :nth-child(3) {
+    transition-delay: 2700ms;
+}
+
+.nav-bar, h1.hidden {
+    transition-delay: 4000ms;
+}
+
+.carousel {
+    transition-delay: 4500ms;
+}
+
+.certifications :nth-child(1) {
+    transition-delay: 500ms;
+}
+
+.certifications :nth-child(2) {
+    transition-delay: 1000ms;
+}
+
+.certificates :nth-child(1) {
+    transition-delay: 1200ms;
+}
+
+.certificates :nth-child(2) {
+    transition-delay: 1400ms;
+}
+
+.certificates :nth-child(3) {
+    transition-delay: 1600ms;
+}
+
+.certificates :nth-child(4) {
+    transition-delay: 1800ms;
+}
+
+.contact{
+    transition-delay: 2000ms;
+}
+
+.platforms {
+    transition-delay: 2500ms;
+}
